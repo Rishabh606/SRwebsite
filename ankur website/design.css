@@ -6,10 +6,7 @@
 }
 body{
     background-color:gainsboro;
-     
-   
-  
-}
+    }
 /* <!-- navigation styling -->
 */
 .nav{
@@ -222,7 +219,7 @@ body{
     position:absolute;
     transform:rotateY(0deg);
     backface-visibility: hidden;
-    transition:transform 0.6s ease;
+    transition:transform .9s ease ;
     border-radius:50%;
     border:dashed 15px black;
     box-shadow:10px 10px 5px grey;
@@ -236,7 +233,10 @@ body{
 }
 
 .flip:hover .front{
-    transform:rotateY(-180deg)
+  animation:stop 0.3s linear  infinite;
+  transform:rotateY(-180deg);
+
+   
 }
 .back{
     background-color:lawngreen;
@@ -245,10 +245,11 @@ body{
      position:relative;
     transform:rotateY(-180deg);
     backface-visibility: hidden;
-    transition:transform 0.6s ease;
+    transition:transform 0.9s ease;
     border-radius:50%;
     border:dashed 15px black;
     box-shadow:10px 10px 5px grey;
+    
 }
 .back h2{
     text-align:center;
@@ -266,7 +267,8 @@ body{
 }
 
 .flip:hover .back{
-    transform:rotateY(0deg)
+    transform:rotateY(0deg);
+   
 }
 /* flashcards for people and their feedbacks */
 
@@ -309,6 +311,7 @@ body{
     font-size:20px;
     animation: pulsate 3s linear infinite;
 }
+/* <!-- animations --> */
 @keyframes pulsate{
     0%{
         font-size:20px;
@@ -345,6 +348,14 @@ body{
     }
     
     
+}
+@keyframes stop{
+    0%{
+        transform:rotateZ(0deg);
+    }
+    100%{
+        transform:rotateZ(0deg);
+    }
 }
 /*<!-- footer ends here -->*/
 
