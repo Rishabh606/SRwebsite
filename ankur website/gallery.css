@@ -7,8 +7,8 @@
 .wrapper{
   height:auto;
   width:100%;
-  margin-top:50px;
-  margin-bottom:50px;
+  margin-top:70px;
+  margin-bottom:80px;
   padding-left:80px;
 }
 .cards{
@@ -20,9 +20,9 @@
 
   text-align:center;
   border-radius:20px;
-  box-shadow:0 0 10px grey,0 0 20px grey,
-    0 0 40px grey,
-    0 0 60px grey;
+  box-shadow:0 0 10px grey,0 0 15px grey,
+    0 0 20px grey,
+    0 0 30px grey;
 }
 .cards:hover{
   background-color:greenyellow;
@@ -54,10 +54,37 @@
   
 }
 /* <!-- styling videos --> */
+.topic{
+  margin-top:50px;
+  margin-bottom:50px;
+  padding-top:25px;
+  letter-spacing: 30px;
+  height:150px;
+  width:auto;
+  background-color:black;
+  font-size: 80px;
+font-family: 'Courgette',cursive,monospace;
+color: #fff;
+  animation:beat 1s linear 0.5s infinite;
+  transform:rotateZ(-7deg); 
+
+text-shadow: 0 0 5px #fff,
+  0 0 10px #fff, 
+  0 0 20px #ff0080,
+  0 0 30px #ff0080, 
+  0 0 40px #ff0080, 
+  0 0 55px #ff0080,
+  0 0 75px #ff0080;
+  
+text-align: center;
+ 
+  text-transform:uppercase;
+  border-radius:60px;
+}
 .videos{
   width:100%;
   height:auto;
-  margin-top:50px;
+  margin-top:60px;
   margin-bottom:50px;
   margin-left:150px;
 
@@ -91,29 +118,18 @@
 iframe{
   margin:10px;
 }
-.topic{
-  padding-top:25px;
-  letter-spacing: 30px;
-  height:150px;
-  width:100%;
-  background-color:black;
-  font-size: 80px;
-font-family: 'Courgette',cursive,monospace;
-color: #fff;
-  
-text-shadow: 0 0 5px #fff,
-  0 0 10px #fff, 
-  0 0 20px #ff0080,
-  0 0 30px #ff0080, 
-  0 0 40px #ff0080, 
-  0 0 55px #ff0080,
-  0 0 75px #ff0080;
-  
-text-align: center;
-  animation: neonAnimation 1.5s ease-in-out infinite alternate;
-  text-transform:uppercase;
-}
 
+@keyframes  beat{
+  0%{
+   letter-spacing: 30px;
+    }
+  50%{
+    letter-spacing: 50px;
+   }
+  100%{
+    letter-spacing: 30px;
+  }
+}
 
 
 

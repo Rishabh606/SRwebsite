@@ -296,6 +296,9 @@ body{
     height:50px;
     width:50px;
 }
+.connect a:hover{
+    color:greenyellow;
+}
 
 .footer p{
     width:auto;
